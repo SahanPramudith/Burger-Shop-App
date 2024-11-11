@@ -1,0 +1,20 @@
+.munue {
+    @media (min-width: 576px) and (max-width: 768px) {
+        max-height: 80px;
+        width: 190px;
+
+    }
+    
+}
+.txt {
+    @media (min-width: 576px) and (max-width: 768px) {
+        font-size: 20px;
+    }
+    
+}
+.icon {
+    @media (min-width: 576px) and (max-width: 768px) {
+        height: 50px;
+    }
+    
+}
