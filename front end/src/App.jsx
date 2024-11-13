@@ -41,7 +41,9 @@ function App() {
           {router.map((val, index) => (
             <Route path={val.path} element={val.Component} />
           ))}
+          {/* <Route path={'*'} element={val.Component} /> */}
         </Routes>
+
         {/* <MainPage /> */}
 
       </div>

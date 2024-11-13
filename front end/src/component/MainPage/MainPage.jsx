@@ -8,7 +8,7 @@ import 'aos/dist/aos.css'
 import MenueList from './MenueList/MenueList';
 import OpenTime from '../OpenTime/OpenTime';
 import Carousel from './Carousel/Carousel';
-import Card from '../comone/Card';
+
 import Piza from '../Menue/Piza/Pitza';
 
 
@@ -52,19 +52,7 @@ export default function MainPage() {
             <OpenTime />
             <Carousel /><br></br>
 
-            <div class="album py-2 bg-body-tertiary">
-                <div class="container">
-
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-                        <Card title="sahan" price="250" img={Buger} />
-                        <Card title="sahan" price="250" img={Buger} />
-                        <Card title="sahan" price="250" img={Buger} />
-                        <Card title="sahan" price="250" img={Buger} />
-                        <Card title="sahan" price="250" img={'src/assets/Pizza 1.png'} />
-                    </div>
-                </div>
-            </div>
+            
             <Piza/>
 
         </dir>
