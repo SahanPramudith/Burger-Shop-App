@@ -5,9 +5,11 @@ import burgerIcon from './assets/4.png'
 import './App.css'
 import MainPage from './component/MainPage/MainPage'
 import OpenTime from './component/OpenTime/OpenTime'
+import router from './component/Navegate/Router'
+import { NavLink, Route, Routes } from 'react-router-dom'
 
 function App() {
-  
+
 
   return (
     <div class="body">
@@ -21,16 +23,27 @@ function App() {
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                {router.map((val, index) => (
+                  <ul class="nav-link">
+                    <NavLink to={val.path}>{val.name}</NavLink>
+
+                  </ul>
+
+                ))}
+                {/* <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#">Pricing</a>  */}
               </div>
             </div>
           </div>
         </nav>
-        <MainPage />
-        
+        <Routes>
+          {router.map((val, index) => (
+            <Route path={val.path} element={val.Component} />
+          ))}
+        </Routes>
+        {/* <MainPage /> */}
+
       </div>
     </div>
   )
