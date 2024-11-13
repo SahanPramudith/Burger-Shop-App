@@ -1,6 +1,8 @@
 const express = require('express')
 var bodyParser = require('body-parser')
 const bugerrouter = require('./routes/buger_router')
+const pizzacontroller = require('./routes/pizza')
+const chickencontroller = require('./routes/chicken')
 
 
 const app = express()
@@ -17,6 +19,8 @@ const port = 3000
 
 
 app.use('/buger', bugerrouter)
+app.use('/pizza', pizzacontroller)
+app.use('/chicken', chickencontroller)
 
 
 app.listen(port, () => {
