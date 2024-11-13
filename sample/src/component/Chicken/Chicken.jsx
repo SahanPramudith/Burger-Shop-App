@@ -2,7 +2,7 @@ export default function Chiken() {
     return (
         <div>
             <div>
-                <p class="justify-center text-3xl  text-zinc-300 w-full bg-cyan-900 inline-block align-middle">Crate Post</p>
+                <p class="justify-center text-3xl  text-zinc-300 w-full bg-cyan-900 inline-block align-middle">Crate Post Chicken</p>
             </div>
             <br />
             <div class="relative left-8 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
