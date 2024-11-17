@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 
-export default function View() {
+export default function BugerViwe() {
 
     const [data, setData] = useState([]);
 
