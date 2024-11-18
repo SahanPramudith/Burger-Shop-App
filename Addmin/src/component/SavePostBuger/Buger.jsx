@@ -16,19 +16,22 @@ export default function Buger() {
         axios.post('http://localhost:3000/buger/postbuger', formdata)
             .then(function (response) {
                 console.log(response);
+                window.location.reload()
+                clear();
             })
             .catch(function (error) {
                 console.log(error);
                 window.location.reload()
             });
-            clear();
+        
         // console.log(descrip, file, price);
 
     }
     function clear() {
         setDescrip('');
         setPrice('');
-        setFile('');
+        setFile(null);
+        setError('');
     }
 
     return (
