@@ -19,9 +19,16 @@ export default function Buger() {
             })
             .catch(function (error) {
                 console.log(error);
+                window.location.reload()
             });
+            clear();
         // console.log(descrip, file, price);
 
+    }
+    function clear() {
+        setDescrip('');
+        setPrice('');
+        setFile('');
     }
 
     return (
