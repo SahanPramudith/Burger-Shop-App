@@ -1,9 +1,9 @@
 import { NavLink, Route, Routes } from "react-router-dom";
 // import nacrouter from "../Navigate/Router/navroute";
 // import router from "../Navigate/Router/router";
-import Piza from "../component/Pitza/Pitza";
+import Piza from "../component/SavePostPitza/Pitza";
 import View from "../component/Viwe/Viwe";
-import Buger from "../component/Buger/Buger";
+import Buger from "../component/SavePostBuger/Buger";
 import { menueroute, navroute, router } from "../Navigate/Router";
 import MainPage from "../component/Mainpage/MainPage";
 import PizzaView from "../component/Viwe/pizzaViwe";
