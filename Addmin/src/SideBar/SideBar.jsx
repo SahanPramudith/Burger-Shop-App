@@ -97,7 +97,7 @@ export default function SideBar() {
                     {/*
                      <Route path='/pitzamenue' element={<PizzaView/>}/>   */}
                 </Routes>
-                    <MainPage/>
+                    {/* <MainPage/> */}
 
             </div>
 
