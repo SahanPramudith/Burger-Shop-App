@@ -6,16 +6,16 @@ export default function PizzaView() {
 
     const [data, setData] = useState([]);
 
-    useEffect(() => {
-        axios.post('/user')
-            .then(function (response) {
-                console.log(response);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+    // useEffect(() => {
+    //     axios.post('/user')
+    //         .then(function (response) {
+    //             console.log(response);
+    //         })
+    //         .catch(function (error) {
+    //             console.log(error);
+    //         });
 
-    }, []);
+    // }, []);
 
 
     return (

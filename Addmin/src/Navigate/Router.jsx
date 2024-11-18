@@ -6,13 +6,14 @@ import View from "../component/Viwe/Viwe";
 import BugerViwe from "../component/Viwe/bugerViwe";
 import PizzaView from "../component/Viwe/pizzaViwe";
 import ChikenView from "../component/Viwe/chickenViwe";
+import MainPage from "../component/Mainpage/MainPage";
 
 export const router = [
     {
-        path: '/viwe',
-        name: "Viwe",
-        Component: <View />,
-        key: "Viwe"
+        path: '/mainpage',
+        name: "Dashboard",
+        Component: <MainPage />,
+        key: "Dashboard"
 
     }
 
