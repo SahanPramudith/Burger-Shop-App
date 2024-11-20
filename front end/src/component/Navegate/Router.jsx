@@ -1,6 +1,7 @@
 import { Component } from "react";
 import MainPage from "../MainPage/MainPage";
 import Piza from "../Menue/Piza/Pitza";
+import Aboute from "../Aboute/Aboute";
 
 const  router=[
     {
@@ -11,9 +12,9 @@ const  router=[
     },
     {
         name:"About",
-        Component:<Piza/>,
-        path:'/piza',
-        key:'home'
+        Component:<Aboute/>,
+        path:'/aboute',
+        key:'aboute'
     },
     {
         name:"Contact",
