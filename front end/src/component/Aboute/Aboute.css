@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inconsolata:wght@200..900&family=Nova+Flat&family=Pacifico&family=Permanent+Marker&display=swap');
+
+
+.about-container-2{
+    display: flex;
+    flex-direction: row;
+}
+.about-left{
+    display: flex;
+   
+    width: 50%;
+    height: 500px;
+    flex-direction: row;
+}
+.about-right{
+    display: flex;
+    width: 50%;
+    height: 500px;
+    flex-direction: column;
+}
+.Ab-img-1{
+    position: relative;
+    border-radius: 140px;
+    height: 50%;
+    margin: 20px;
+    bottom: 25px;
+}
+.Ab-img-2{
+    margin-left: 20px;
+    width: 55%;
+    left: 50px;
+    top: 800px;
+    
+}
+.Ab-img-3{
+    position: relative;
+    display: flex;
+    border-radius: 140px 140px 0px 140px;
+    height: 90%;
+    margin: 10px;
+    right: 100px;
+   
+}
+.left-bottom{
+    opacity: 0.07;
+}
+.txt{
+    font-size: 20px;
+    font-family: Permanent Marker ;
+}
