@@ -6,11 +6,13 @@ import 'flowbite';
 import 'flowbite-react';
 import 'flowbite/dist/flowbite.min.js';
 import SideBar from './SideBar/SideBar';
+import LoginFrom from './Login From/Loginform';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
+      <LoginFrom/>
       <SideBar/>
     </div>
   )
