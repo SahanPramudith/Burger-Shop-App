@@ -8,7 +8,7 @@ export default function Pizza() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/buger/getbuger")
+        axios.get("http://localhost:3000/pizza/getpizza")
 
             .then(function (response) {
                 console.log(response.data);

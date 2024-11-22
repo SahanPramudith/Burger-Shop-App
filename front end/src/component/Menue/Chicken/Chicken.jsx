@@ -8,7 +8,7 @@ export default function Chicken() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/buger/getbuger")
+        axios.get("http://localhost:3000/chicken/getchicken")
 
             .then(function (response) {
                 console.log(response.data);

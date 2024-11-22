@@ -49,6 +49,7 @@ function App() {
               element={menu.Component}
             />
           ))}
+          <Route path={'*'} element={<MainPage/>} />
         </Routes>
 
         {/* <MainPage /> */}
