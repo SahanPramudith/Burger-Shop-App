@@ -9,7 +9,9 @@
 .txt {
     @media (min-width: 576px) and (max-width: 768px) {
         font-size: 20px;
+        text-decoration: none;
     }
+    
     
 }
 .icon {

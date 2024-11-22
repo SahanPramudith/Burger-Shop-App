@@ -10,6 +10,8 @@ import OpenTime from '../OpenTime/OpenTime';
 import Carousel from './Carousel/Carousel';
 
 import Piza from '../Menue/Piza/Pitza';
+import Pizza from '../Menue/Piza/Pitza';
+import Chicken from '../Menue/Chicken/Chicken';
 
 
 export default function MainPage() {
@@ -53,7 +55,7 @@ export default function MainPage() {
             <Carousel /><br></br>
 
             
-            <Piza/>
+            <Chicken/>
 
         </dir>
     )

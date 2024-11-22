@@ -4,7 +4,7 @@ import Card from '../../comone/Card';
 import axios from "axios";
 import { useEffect, useState } from 'react';
 
-export default function Pizza() {
+export default function Buger() {
     const [data, setData] = useState([]);
 
     useEffect(() => {

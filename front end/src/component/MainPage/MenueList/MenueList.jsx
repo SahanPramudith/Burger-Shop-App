@@ -1,3 +1,4 @@
+import { Navigate, NavLink } from 'react-router-dom';
 import './MenueList.css';
 
 
@@ -9,23 +10,32 @@ export default function MenueList() {
                     backgroundImage: "url('src/assets/bugerBanner.png')", //  
                 }}>
                     <div className="row g-4 ">
+
                         <div className="col-12 col-md-4 " data-aos="zoom-out-up">
-                            <div className="munue d-flex align-items-center p-3" style={{ backgroundColor: '#F5F7F8', border: '2px solid grey', borderRadius: '30px' }}>
-                                <img className='icon' src="src/assets/icon-1.png" alt="Pizza" style={{ width: '75px' }} />
-                                <h1 className="txt ms-3 flex-grow-1">Pizza</h1>
+                            <NavLink to={'/pizza'} style={{ textDecoration: 'none' ,color:'black'}}>
+                                <div className="munue d-flex align-items-center p-3" style={{ backgroundColor: '#F5F7F8', border: '2px solid grey', borderRadius: '30px' }}>
 
-                                <img className='icon' style={{ width: '50px', height: '50px' }} src="src/assets/arrow-2.png" alt="Arrow" />
+                                    <img className='icon' src="src/assets/icon-1.png" alt="Pizza" style={{ width: '75px' }} />
 
-                            </div>
+                                    <h1 className="txt ms-3 flex-grow-1">Pizza</h1>
+
+                                    <img className='icon' style={{ width: '50px', height: '50px' }} src="src/assets/arrow-2.png" alt="Arrow" />
+
+                                </div>
+                            </NavLink>
                         </div>
+
+
                         <div className="col-12 col-md-4 ">
-                            <div data-aos="zoom-out-up" className="munue d-flex align-items-center p-3" style={{ backgroundColor: '#F5F7F8', border: '2px solid grey', borderRadius: '30px' }}>
-                                <img className='icon' src="src/assets/icon-2.png" alt="Burger" style={{ width: '75px' }} />
-                                <h1 className="txt ms-3 flex-grow-1">Burger</h1>
+                            <NavLink to={'/buger'} style={{ textDecoration: 'none' ,color:'black'}}>
+                                <div data-aos="zoom-out-up" className="munue d-flex align-items-center p-3" style={{ backgroundColor: '#F5F7F8', border: '2px solid grey', borderRadius: '30px' }}>
+                                    <img className='icon' src="src/assets/icon-2.png" alt="Burger" style={{ width: '75px' }} />
+                                    <h1 className="txt ms-3 flex-grow-1">Burger</h1>
 
-                                <img style={{ width: '50px', height: '50px' }} src="src/assets/arrow-2.png" alt="Arrow" />
+                                    <img style={{ width: '50px', height: '50px' }} src="src/assets/arrow-2.png" alt="Arrow" />
 
-                            </div>
+                                </div>
+                            </NavLink>
                         </div>
 
                         <div data-aos="zoom-out-up" className="col-12 col-md-4">
@@ -61,16 +71,18 @@ export default function MenueList() {
                         </div>
 
                         <div className="col-12 col-md-4">
-                            <div className="munue d-flex align-items-center p-3" style={{ backgroundColor: '#F5F7F8', border: '2px solid grey', borderRadius: '30px' }}>
-                                <img className='icon' src="src/assets/icon-6.png" alt="Chicken" style={{ width: '75px' }} />
-                                <h1 className="txt ms-3 flex-grow-1">Chicken</h1>
+                            <NavLink to={'/chicken'} style={{ textDecoration: 'none' ,color:'black'}}>
+                                <div className="munue d-flex align-items-center p-3" style={{ backgroundColor: '#F5F7F8', border: '2px solid grey', borderRadius: '30px' }}>
+                                    <img className='icon' src="src/assets/icon-6.png" alt="Chicken" style={{ width: '75px' }} />
+                                    <h1 className="txt ms-3 flex-grow-1">Chicken</h1>
 
-                                <img style={{ width: '50px', height: '50px' }} src="src/assets/arrow-2.png" alt="Arrow" />
-                            </div>
+                                    <img style={{ width: '50px', height: '50px' }} src="src/assets/arrow-2.png" alt="Arrow" />
+                                </div>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
             </div>
-        </dev>
+        </dev >
     )
 }
