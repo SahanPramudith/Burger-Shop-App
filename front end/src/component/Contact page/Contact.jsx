@@ -10,8 +10,8 @@ export default function Contact() {
     const [name, setName] = useState('');
 
     const sendEmail = (e) => {
-        console.log(email,name);
-        
+        console.log(email, name);
+
         e.preventDefault();
 
         emailjs
@@ -19,7 +19,7 @@ export default function Contact() {
                 'service_kh2gk6b',     // Replace with your EmailJS service ID
                 'template_53phanl',    // Replace with your EmailJS template ID
                 {
-                    user_name:  name,
+                    user_name: name,
                     user_email: email,
                 },
                 '_wT6EWr79IrQrmF5i'         // Replace with your EmailJS public key
@@ -28,13 +28,21 @@ export default function Contact() {
                 (result) => {
                     console.log("Email sent:", result.text);
                     alert("Registration successful! Welcome email sent.");
+                    window.location.reload()
+
                 },
                 (error) => {
                     console.error("Error sending email:", error.text);
-                    alert("Failed to send welcome email.");
+
                 }
             );
+        clear()
     };
+
+    function clear() {
+        email(null),
+        email(null)
+    }
 
 
     return (
@@ -84,7 +92,7 @@ export default function Contact() {
             <div className="container">
                 <div className="container my-5">
                     <h2 className="text-center mb-4">Contact Us</h2>
-                    <form  onSubmit={sendEmail} className="row g-3">
+                    <form onSubmit={sendEmail} className="row g-3">
                         {/* Full Name */}
                         <div className="col-md-6">
                             <label htmlFor="fullName" className="form-label">Full Name</label>

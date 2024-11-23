@@ -53,10 +53,6 @@ export default function MainPage() {
             <MenueList />
             <OpenTime />
             <Carousel /><br></br>
-
-            
-            <Chicken/>
-
         </dir>
     )
 }

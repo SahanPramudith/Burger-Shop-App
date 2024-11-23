@@ -31,11 +31,7 @@ export default function Chicken() {
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         {data.map((val, index) => (
 
-
-
                             <Card title={val.description} price={val.price} img={`http://localhost:3000/`+val.image} />
-
-
                         ))}
                     </div>
 

@@ -73,8 +73,9 @@ export default function SideBar() {
                             </li>
                         ))}
                         <li>
-                            {/* */}
-                            
+                    
+
+
                         </li>
                     </ul>
                 </div>
@@ -93,8 +94,8 @@ export default function SideBar() {
                         <Route path={val.path} element={val.Component} />
 
                     ))}
-                    
-                     <Route path='*' element={<MainPage/>}/>   
+
+                    <Route path='*' element={<MainPage />} />
                 </Routes>
                 {/* <MainPage/> */}
 

@@ -9,7 +9,7 @@ export default function Card(props) {
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                             </div>
-                            <small class="text-body-secondary">{props.price}</small>
+                            <small class="text-body-secondary">RS. {props.price}</small>
                         </div>
                     </div>
                 </div>

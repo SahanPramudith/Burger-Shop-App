@@ -1,6 +1,9 @@
 import { useState } from "react"
 import axios from "axios";
 
+ import Swal from 'sweetalert2/dist/sweetalert2.js'
+// import 'sweetalert2/src/sweetalert2.scss'
+
 export default function Buger() {
 
     const [descrip, setDescrip] = useState('');
@@ -15,15 +18,14 @@ export default function Buger() {
 
         axios.post('http://localhost:3000/buger/postbuger', formdata)
             .then(function (response) {
-                console.log(response);
-                window.location.reload()
+               window.alert()
                 clear();
             })
             .catch(function (error) {
                 console.log(error);
                 window.location.reload()
             });
-        
+
         // console.log(descrip, file, price);
 
     }
